@@ -1,0 +1,30 @@
+body {
+    font-family: 'Calibri', sans-serif; /* Font family set to Calibri */
+    font-size: 18px; /* Updated font size for accessibility */
+    line-height: 1.6;
+    color: #1a1a1a; /* Dark grey text for better readability */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Light background color that's not white */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text
