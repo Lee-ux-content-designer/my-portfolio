@@ -1,3 +1,54 @@
+/* General body and main content styling */
+body {
+    font-family: 'Calibri', sans-serif;
+    background-color: #f5f5f5;  /* Light but not white */
+    color: #333;  /* Dark gray font */
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;  /* Limit the width of the main content area */
+    margin: 0 auto;  /* Center content horizontally */
+    padding: 30px;  /* Add padding for spacing */
+}
+
+/* General styling for paragraphs and lists */
+p {
+    margin: 0 0 20px; /* Add bottom margin to paragraphs for spacing */
+}
+
+ul {
+    padding-left: 20px; /* Add padding for list items */
+    margin: 0 0 20px; /* Add bottom margin to lists for spacing */
+}
+
+/* Remove unnecessary line breaks in HTML */
+br {
+    display: none; /* Hide <br> tags if not needed for layout */
+}
+
+/* Specific styling for project items */
+.project-item {
+    margin-bottom: 30px; /* Add margin between project items */
+    padding: 15px; /* Add padding for better spacing */
+    background-color: #fff; /* Background color for project items */
+    border-radius: 8px; /* Rounded corners for project items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}
+
+/* Align the content in the header and footer */
+header, footer {
+    padding: 20px; /* Add padding inside header and footer */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+}
+
+footer p {
+    margin: 0; /* Remove margin from footer paragraph */
+}
+
+
 /* Header styling */
 header {
     background-color: #000; /* Black background */
