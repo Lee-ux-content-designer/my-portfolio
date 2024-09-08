@@ -1,95 +1,89 @@
-/* General body and main content styling */
+/* General Body and Main Styling */
 body {
     font-family: 'Calibri', sans-serif;
-    background-color: #f5f5f5;  /* Light but not white */
-    color: #333;  /* Dark gray font */
+    background-color: #f5f5f5;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
 main {
-    max-width: 1200px;  /* Limit the width of the main content area */
-    margin: 0 auto;  /* Center content horizontally */
-    padding: 30px;  /* Add padding for spacing */
+    max-width: 1200px;
+    margin: 0 auto; /* Centering */
+    padding: 20px; /* Padding around the content */
 }
 
-/* General styling for paragraphs and lists */
+/* Ensure consistent margins for headers and paragraphs */
+h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 p {
-    margin: 0 0 20px; /* Add bottom margin to paragraphs for spacing */
+    margin-bottom: 10px;
 }
 
+/* For Lists */
 ul {
-    padding-left: 20px; /* Add padding for list items */
-    margin: 0 0 20px; /* Add bottom margin to lists for spacing */
+    margin: 0;
+    padding-left: 20px; /* Consistent padding for list items */
 }
 
-/* Remove unnecessary line breaks in HTML */
-br {
-    display: none; /* Hide <br> tags if not needed for layout */
+li {
+    margin-bottom: 10px;
 }
 
-/* Specific styling for project items */
-.project-item {
-    margin-bottom: 30px; /* Add margin between project items */
-    padding: 15px; /* Add padding for better spacing */
-    background-color: #fff; /* Background color for project items */
-    border-radius: 8px; /* Rounded corners for project items */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+/* Fix for the image alignment */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Prevents inline spacing issues */
+    margin: 20px 0; /* Adds space around the image */
 }
 
-/* Align the content in the header and footer */
-header, footer {
-    padding: 20px; /* Add padding inside header and footer */
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
-}
-
-footer p {
-    margin: 0; /* Remove margin from footer paragraph */
-}
-
-
-/* Header styling */
-header {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
-    padding: 10px 20px; /* Padding for spacing inside the header */
-}
-
-header h1 {
-    margin: 0; /* Remove default margin */
-    font-size: 24px; /* Adjust font size if needed */
-}
-
-header nav ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-}
-
-header nav ul li {
-    display: inline; /* Display list items in a line */
-    margin-right: 15px; /* Space between navigation items */
-}
-
-header nav a {
-    color: #fff; /* White text color for links */
-    text-decoration: none; /* Remove underline from links */
-}
-
-header nav a:hover {
-    text-decoration: underline; /* Underline on hover for links */
-}
-
-
-/* Add padding/margin to the body to create space around the content */
+/* General Body and Main Styling */
 body {
     font-family: 'Calibri', sans-serif;
-    background-color: #f5f5f5;  /* light but not white */
-    color: #333;  /* dark gray font */
+    background-color: #f5f5f5;
+    color: #333;
     margin: 0;
     padding: 0;
 }
+
+main {
+    max-width: 1200px;
+    margin: 0 auto; /* Centering */
+    padding: 20px; /* Padding around the content */
+}
+
+/* Ensure consistent margins for headers and paragraphs */
+h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* For Lists */
+ul {
+    margin: 0;
+    padding-left: 20px; /* Consistent padding for list items */
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Fix for the image alignment */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Prevents inline spacing issues */
+    margin: 20px 0; /* Adds space around the image */
+}
+
 
 main {
     max-width: 1200px;  /* Limit the width of the main content area */
@@ -121,5 +115,3 @@ a:focus, button:focus {
     color: #fff; /* White text color for better contrast */
     border: 2px solid #0056b3; /* Darker border to indicate focus */
 }
-
-
