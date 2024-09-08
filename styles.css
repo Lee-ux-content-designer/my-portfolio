@@ -1,4 +1,4 @@
-/* General Body and Main Styling */
+//* General Body and Main Styling */
 body {
     font-family: 'Calibri', sans-serif;
     background-color: #f5f5f5;
@@ -9,109 +9,102 @@ body {
 
 main {
     max-width: 1200px;
-    margin: 0 auto; /* Centering */
-    padding: 20px; /* Padding around the content */
-}
-
-/* Ensure consistent margins for headers and paragraphs */
-h1, h2, h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-p {
-    margin-bottom: 10px;
-}
-
-/* For Lists */
-ul {
-    margin: 0;
-    padding-left: 20px; /* Consistent padding for list items */
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-/* Fix for the image alignment */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block; /* Prevents inline spacing issues */
-    margin: 20px 0; /* Adds space around the image */
-}
-
-/* General Body and Main Styling */
-body {
-    font-family: 'Calibri', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-main {
-    max-width: 1200px;
-    margin: 0 auto; /* Centering */
-    padding: 20px; /* Padding around the content */
-}
-
-/* Ensure consistent margins for headers and paragraphs */
-h1, h2, h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-p {
-    margin-bottom: 10px;
-}
-
-/* For Lists */
-ul {
-    margin: 0;
-    padding-left: 20px; /* Consistent padding for list items */
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-/* Fix for the image alignment */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block; /* Prevents inline spacing issues */
-    margin: 20px 0; /* Adds space around the image */
-}
-
-
-main {
-    max-width: 1200px;  /* Limit the width of the main content area */
-    margin: 0 auto;  /* Center content horizontally */
+    margin: 0 auto; /* Center content horizontally */
     padding: 30px;  /* Add padding for spacing */
 }
 
-/* General focus styles for interactive elements */
-a:focus, button:focus {
-    outline: 3px solid #007bff; /* Blue outline for focus state */
-    outline-offset: 2px; /* Space between outline and element */
+/* Ensure consistent margins for headers and paragraphs */
+h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-/* Specific focus styles for filter pills */
-.filter-pill:focus {
-    background-color: #007bff; /* Highlighted background color */
-    color: #fff; /* White text color for better contrast */
-    border: 2px solid #0056b3; /* Darker border to indicate focus
-
-/* General focus styles for interactive elements */
-a:focus, button:focus {
-    outline: 3px solid #007bff; /* Blue outline for focus state */
-    outline-offset: 2px; /* Space between outline and element */
+p {
+    margin-bottom: 10px;
 }
 
-/* Specific focus styles for filter pills */
+/* For Lists */
+ul {
+    margin: 0;
+    padding-left: 20px; /* Consistent padding for list items */
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Fix for the image alignment */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Prevents inline spacing issues */
+    margin: 20px 0; /* Adds space around the image */
+}
+
+/* Focus states for all interactive elements */
+a:focus, button:focus, input:focus, textarea:focus {
+    outline: 3px dashed #ffcc00; /* Yellow focus outline for better visibility */
+    outline-offset: 5px; /* Adds space between the outline and the element */
+    background-color: rgba(255, 255, 0, 0.2); /* Optional yellowish background color on focus */
+}
+
+/* General focus styles for links and buttons */
+a:focus, button:focus {
+    border: none;
+}
+
+/* Filter pill styling */
+.filter-pill {
+    display: inline-block; /* Allows pills to be side by side */
+    padding: 10px 20px; /* Adjust the size of the pill (make bigger) */
+    margin: 5px 10px; /* Add space between the pills */
+    font-size: 16px; /* Adjust font size to make text larger */
+    background-color: #e0e0e0; /* Default background color */
+    color: #333; /* Text color */
+    border-radius: 30px; /* Rounded corners */
+    border: 2px solid transparent; /* Default border */
+    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth hover/focus effects */
+}
+
+/* Filter pill hover state */
+.filter-pill:hover {
+    background-color: #d0d0d0; /* Change background color on hover */
+    border-color: #b0b0b0; /* Subtle border color change on hover */
+}
+
+/* Filter pill focus state */
 .filter-pill:focus {
-    background-color: #007bff; /* Highlighted background color */
-    color: #fff; /* White text color for better contrast */
-    border: 2px solid #0056b3; /* Darker border to indicate focus */
+    outline: 3px dashed #ffcc00; /* Yellow focus outline for visibility */
+    outline-offset: 5px; /* Offset focus outline */
+    background-color: rgba(255, 255, 0, 0.2); /* Optional yellow tint when focused */
+    color: #333; /* Retain dark text color */
+    border: 2px solid #ffcc00; /* Yellow border for focus state */
+}
+
+/* Adjusting spacing between pills */
+.filter-pill-container {
+    display: flex; /* Flexbox for better pill alignment */
+    flex-wrap: wrap; /* Allow pills to wrap to the next line */
+    gap: 15px; /* More spacing between pills */
+}
+
+/* Button styling */
+button {
+    background-color: #007bff; /* Button background */
+    color: white; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+button:focus {
+    outline: 3px dashed #ffcc00; /* Yellow focus outline for visibility */
+    outline-offset: 5px;
+    background-color: rgba(255, 255, 0, 0.2); /* Optional yellowish background color on focus */
 }
