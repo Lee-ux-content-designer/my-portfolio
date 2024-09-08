@@ -2,7 +2,7 @@
 body {
     font-family: 'Calibri', sans-serif; /* Ensure Calibri is used */
     font-size: 16px; /* Default font size */
-    background-color: #f4f4f4; /* Soft off-white background for dyslexia-friendly design */
+    background-color: #f5f5f5; /* Soft off-white background for dyslexia-friendly design */
     color: #333; /* Dark text for high contrast */
     line-height: 1.6; /* Improved line height for readability */
     margin: 0;
@@ -11,8 +11,8 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #0033cc; /* Dark blue background for header */
-    color: #fff; /* White text color for contrast */
+    background-color: #333; /* Dark grey background for header */
+    color: #f5f5f5; /* Off-white text color for contrast */
     padding: 20px;
 }
 
@@ -100,9 +100,9 @@ a:focus, button:focus, .filter-pill:focus {
     font-size: 16px; /* Consistent font size */
     padding: 10px 20px; /* Increase padding for better size */
     margin: 10px; /* Add spacing between pills */
-    background-color: #0033cc; /* Dark blue background for filter pills */
-    color: #ffff00; /* Yellow text color for filter pills */
-    border: 1px solid #0033cc; /* Dark blue border to match background */
+    background-color: #e0e0e0; /* Light grey background for the filter pills */
+    color: #333; /* Dark text color for the filter pills */
+    border: 1px solid #ccc; /* Light grey border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor to indicate clickable */
     outline: none; /* Remove default outline */
@@ -110,19 +110,19 @@ a:focus, button:focus, .filter-pill:focus {
 
 .filter-pill.active {
     background-color: #ffff00; /* Yellow background when active */
-    color: #0033cc; /* Dark blue text when active */
+    color: #333; /* Dark text color when active */
 }
 
 .filter-pill:focus {
-    background-color: #ffff00; /* Change to yellow when focused */
-    color: #0033cc; /* Dark blue text for better contrast when focused */
-    border: 2px solid #0033cc; /* Dark blue border to match the background */
+    background-color: #ffff00; /* Yellow background when focused */
+    color: #333; /* Dark text color for better contrast */
+    border: 2px solid #333; /* Dark border to indicate focus */
 }
 
 /* Footer Styles */
 footer {
-    background-color: #0033cc; /* Dark blue background for footer */
-    color: #fff; /* White text color for contrast */
+    background-color: #333; /* Dark grey background for footer */
+    color: #f5f5f5; /* Off-white text color for contrast */
     padding: 10px;
     text-align: center;
 }
