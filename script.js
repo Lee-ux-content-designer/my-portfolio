@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const projectItems = document.querySelectorAll('.project-item');
 
     filterPills.forEach(pill => {
+        // Ensure pills are focusable via keyboard
+        pill.setAttribute('tabindex', '0');
+
         pill.addEventListener('click', function () {
             // Remove the 'active' class from all pills
             filterPills.forEach(pill => pill.classList.remove('active'));
@@ -19,6 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     item.style.display = 'none'; // Hide project
                 }
             });
+        });
+
+        // Add keyboard support for focus and pressing 'Enter' to trigger click
+        pill.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {  // 'Enter' or 'Spacebar' key triggers click
+                e.preventDefault();  // Prevent scrolling down for 'space'
+                this.click();  // Trigger the click handler
+            }
         });
     });
 });
