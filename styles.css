@@ -1,3 +1,36 @@
+/* Header styling */
+header {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding for spacing inside the header */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Adjust font size if needed */
+}
+
+header nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+header nav ul li {
+    display: inline; /* Display list items in a line */
+    margin-right: 15px; /* Space between navigation items */
+}
+
+header nav a {
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+header nav a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+
 /* Add padding/margin to the body to create space around the content */
 body {
     font-family: 'Calibri', sans-serif;
@@ -24,4 +57,18 @@ a:focus, button:focus {
     background-color: #007bff; /* Highlighted background color */
     color: #fff; /* White text color for better contrast */
     border: 2px solid #0056b3; /* Darker border to indicate focus
+
+/* General focus styles for interactive elements */
+a:focus, button:focus {
+    outline: 3px solid #007bff; /* Blue outline for focus state */
+    outline-offset: 2px; /* Space between outline and element */
+}
+
+/* Specific focus styles for filter pills */
+.filter-pill:focus {
+    background-color: #007bff; /* Highlighted background color */
+    color: #fff; /* White text color for better contrast */
+    border: 2px solid #0056b3; /* Darker border to indicate focus */
+}
+
 
