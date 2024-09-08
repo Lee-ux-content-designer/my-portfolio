@@ -1,16 +1,17 @@
-//* General Body and Main Styling */
+/* General Body and Main Styling */
 body {
-    font-family: 'Calibri', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    font-family: 'Calibri', sans-serif; /* Ensure Calibri is used */
+    font-size: 16px; /* Default font size */
+    background-color: #f5f5f5; /* Soft off-white background for dyslexia-friendly design */
+    color: #333; /* Dark text for high contrast */
     margin: 0;
     padding: 0;
 }
 
 main {
-    max-width: 1200px;
+    max-width: 1200px; /* Limit the width of the main content area */
     margin: 0 auto; /* Center content horizontally */
-    padding: 30px;  /* Add padding for spacing */
+    padding: 30px; /* Add padding for spacing */
 }
 
 /* Ensure consistent margins for headers and paragraphs */
@@ -41,70 +42,27 @@ img {
     margin: 20px 0; /* Adds space around the image */
 }
 
-/* Focus states for all interactive elements */
-a:focus, button:focus, input:focus, textarea:focus {
-    outline: 3px dashed #ffcc00; /* Yellow focus outline for better visibility */
-    outline-offset: 5px; /* Adds space between the outline and the element */
-    background-color: rgba(255, 255, 0, 0.2); /* Optional yellowish background color on focus */
-}
-
-/* General focus styles for links and buttons */
-a:focus, button:focus {
-    border: none;
-}
-
-/* Filter pill styling */
-.filter-pill {
-    display: inline-block; /* Allows pills to be side by side */
-    padding: 10px 20px; /* Adjust the size of the pill (make bigger) */
-    margin: 5px 10px; /* Add space between the pills */
-    font-size: 16px; /* Adjust font size to make text larger */
-    background-color: #e0e0e0; /* Default background color */
-    color: #333; /* Text color */
-    border-radius: 30px; /* Rounded corners */
-    border: 2px solid transparent; /* Default border */
-    cursor: pointer; /* Pointer cursor to indicate it's clickable */
-    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth hover/focus effects */
-}
-
-/* Filter pill hover state */
-.filter-pill:hover {
-    background-color: #d0d0d0; /* Change background color on hover */
-    border-color: #b0b0b0; /* Subtle border color change on hover */
-}
-
-/* Filter pill focus state */
-.filter-pill:focus {
-    outline: 3px dashed #ffcc00; /* Yellow focus outline for visibility */
-    outline-offset: 5px; /* Offset focus outline */
-    background-color: rgba(255, 255, 0, 0.2); /* Optional yellow tint when focused */
-    color: #333; /* Retain dark text color */
-    border: 2px solid #ffcc00; /* Yellow border for focus state */
-}
-
-/* Adjusting spacing between pills */
-.filter-pill-container {
-    display: flex; /* Flexbox for better pill alignment */
-    flex-wrap: wrap; /* Allow pills to wrap to the next line */
-    gap: 15px; /* More spacing between pills */
-}
-
-/* Button styling */
-button {
-    background-color: #007bff; /* Button background */
-    color: white; /* Button text color */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-}
-
-button:focus {
-    outline: 3px dashed #ffcc00; /* Yellow focus outline for visibility */
+/* Focus styles for interactive elements */
+a:focus, button:focus, .filter-pill:focus {
+    outline: 3px dashed #ffcc00; /* High-contrast yellow for focus */
     outline-offset: 5px;
-    background-color: rgba(255, 255, 0, 0.2); /* Optional yellowish background color on focus */
+    background-color: rgba(255, 255, 0, 0.2); /* Soft yellow background when focused */
+    color: #333; /* Ensure the text color remains easy to read */
+}
+
+/* Filter Pills */
+.filter-pill {
+    font-family: 'Calibri', sans-serif; /* Ensure Calibri font */
+    font-size: 16px; /* Consistent font size */
+    padding: 10px 20px; /* Increase padding for better size */
+    margin: 10px; /* Add spacing between pills */
+    background-color: #e0e0e0; /* Light background color for the filter pills */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.filter-pill:focus {
+    background-color: #007bff; /* Highlighted background color */
+    color: #fff; /* White text color for better contrast */
+    border: 2px solid #0056b3; /* Darker border to indicate focus */
 }
