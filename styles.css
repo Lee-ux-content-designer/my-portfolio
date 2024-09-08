@@ -10,7 +10,18 @@ body {
 main {
     max-width: 1200px;  /* Limit the width of the main content area */
     margin: 0 auto;  /* Center content horizontally */
-    padding: 20px;  /* Add padding for spacing */
+    padding: 30px;  /* Add padding for spacing */
 }
 
-/* Optionally, for specific pages, you can adjust margins as needed */
+/* General focus styles for interactive elements */
+a:focus, button:focus {
+    outline: 3px solid #007bff; /* Blue outline for focus state */
+    outline-offset: 2px; /* Space between outline and element */
+}
+
+/* Specific focus styles for filter pills */
+.filter-pill:focus {
+    background-color: #007bff; /* Highlighted background color */
+    color: #fff; /* White text color for better contrast */
+    border: 2px solid #0056b3; /* Darker border to indicate focus
+
