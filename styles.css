@@ -54,15 +54,17 @@ h2 {
     font-size: 1.5em;
 }
 
-/* Ensure consistent margins for headers and paragraphs */
-h1, h2, h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
+/* Add spacing between paragraphs */
+p {
+    margin-bottom: 20px; /* Adjust the value as needed */
 }
 
-p {
-    margin-bottom: 10px;
+/* Add spacing after headings */
+h1, h2, h3 {
+    margin-top: 30px; /* Add space before the heading */
+    margin-bottom: 15px; /* Add space after the heading */
 }
+
 
 /* For Lists */
 ul {
