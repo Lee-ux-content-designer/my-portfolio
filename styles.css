@@ -84,14 +84,14 @@ li {
 }
 
 .portfolio-container {
-    width: 50%; /* Make the container half of the page width */
+    width: 66%; /* Make the container half of the page width */
     margin: 0 auto; /* Center the container horizontally */
     padding: 20px; /* Optional: Add padding for some inner spacing */
 }
 
 /* Fix for the image alignment */
 .portfolio-img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     display: block; /* Prevents inline spacing issues */
     margin: 20px 0; /* Adds space around the image */
