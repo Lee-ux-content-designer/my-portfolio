@@ -90,7 +90,7 @@ li {
 }
 
 /* Fix for the image alignment */
-portfolio-img {
+.portfolio-img {
     max-width: 25%;
     height: auto;
     display: block; /* Prevents inline spacing issues */
