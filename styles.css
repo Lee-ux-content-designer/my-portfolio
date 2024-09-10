@@ -85,7 +85,7 @@ li {
 
 /* Fix for the image alignment */
 portfolio-img {
-    max-width: 300px;
+    max-width: 25%;
     height: auto;
     display: block; /* Prevents inline spacing issues */
     margin: 20px 0; /* Adds space around the image */
