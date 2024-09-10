@@ -91,7 +91,7 @@ li {
 
 /* Fix for the image alignment */
 .portfolio-img {
-    max-width: 25%;
+    max-width: 50%;
     height: auto;
     display: block; /* Prevents inline spacing issues */
     margin: 20px 0; /* Adds space around the image */
