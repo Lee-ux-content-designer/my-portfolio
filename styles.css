@@ -89,6 +89,13 @@ img {
     height: auto;
     display: block; /* Prevents inline spacing issues */
     margin: 20px 0; /* Adds space around the image */
+
+}
+
+.portfolio-img {
+    width: 50%; /* 50% of the parent container */
+    height: auto;
+
 }
 
 /* Focus styles for interactive elements */
