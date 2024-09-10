@@ -93,7 +93,7 @@ img {
 }
 
 .portfolio-img {
-    width: 50%; /* 50% of the parent container */
+    width: 300px; /* Set desired width */
     height: auto;
 
 }
