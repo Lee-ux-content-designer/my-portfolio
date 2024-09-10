@@ -83,6 +83,12 @@ li {
     margin-bottom: 10px;
 }
 
+.portfolio-container {
+    width: 50%; /* Make the container half of the page width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Optional: Add padding for some inner spacing */
+}
+
 /* Fix for the image alignment */
 portfolio-img {
     max-width: 25%;
