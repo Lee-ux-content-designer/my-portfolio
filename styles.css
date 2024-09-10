@@ -84,18 +84,11 @@ li {
 }
 
 /* Fix for the image alignment */
-img {
-    max-width: 100%;
+portfolio-img {
+    max-width: 300px;
     height: auto;
     display: block; /* Prevents inline spacing issues */
     margin: 20px 0; /* Adds space around the image */
-
-}
-
-.portfolio-img {
-    width: 300px; /* Set desired width */
-    height: auto;
-
 }
 
 /* Focus styles for interactive elements */
