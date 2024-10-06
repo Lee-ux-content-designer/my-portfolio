@@ -103,6 +103,13 @@ a:focus, button:focus, .filter-pill:focus {
     outline-offset: 5px;
     background-color: rgba(255, 255, 0, 0.2); /* Soft yellow background when focused */
     color: #333; /* Ensure the text color remains easy to read */
+
+a:focus, button:focus {
+    outline: 3px solid #ffcc00; /* Example focus style */
+    outline-offset: 3px;
+}
+
+
 }
 
 /* Filter Pills Styles */
