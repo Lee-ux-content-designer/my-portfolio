@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const projectItems = document.querySelectorAll('.project-item');
 
     filterPills.forEach(pill => {
+        // Ensure pills are focusable via keyboard
+        pill.setAttribute('tabindex', '0');
+
         pill.addEventListener('click', function () {
             // Remove the 'active' class and update aria-pressed for all pills
             filterPills.forEach(pill => {
@@ -36,8 +39,14 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    // Initial tabindex for project items
+    projectItems.forEach(item => {
+        if (item.style.display === 'none') {
+            item.setAttribute('tabindex', '-1');
+        } else {
+            item.removeAttribute('tabindex');
+        }
+    });
 });
-
-
-
 
