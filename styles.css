@@ -1,5 +1,89 @@
 /* General Body and Main Styling */
 body {
+    font-family: 'Calibri', sans-serif;
+    font-size: 16px;
+    background-color: #fefced;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Work Section: Image and Text */
+.work-section {
+    display: flex; /* Enable Flexbox */
+    justify-content: space-between; /* Spread items evenly */
+    align-items: center; /* Align items vertically in the center */
+    gap: 1rem; /* Add space between the image and text */
+    margin: 2rem auto; /* Center the section and add vertical spacing */
+    max-width: 1200px; /* Limit the container width */
+    padding: 0 1rem; /* Add horizontal padding */
+}
+
+.work-figure {
+    flex: 1; /* Let the image take up half the space */
+    max-width: 50%; /* Ensure it doesn't grow beyond half */
+    text-align: center; /* Center-align the caption */
+}
+
+.work-figure img {
+    width: 100%; /* Image fills its parent */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.work-figure figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* Text Container */
+.work-description {
+    flex: 1; /* Let the text take up the other half */
+    max-width: 50%; /* Ensure text doesn't grow beyond half */
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.work-description h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.work-description p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .work-section {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center align text for smaller screens */
+    }
+
+    .work-figure,
+    .work-description {
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    .work-description {
+        margin-top: 1rem; /* Add space between image and text */
+    }
+}
+
+/* Navigation Focus Styles */
+a:focus, button:focus, .filter-pill:focus {
+    outline: 3px dashed #ffcc00;
+    outline-offset: 5px;
+    background-color: rgba(255, 255, 0, 0.2);
+    color: #333;
+}
+
+/* General Body and Main Styling */
+body {
     font-family: 'Calibri', sans-serif; /* Ensure Calibri is used */
     font-size: 16px; /* Default font size */
     background-color: #f5f5f5; /* Soft off-white background for dyslexia-friendly design */
@@ -83,6 +167,13 @@ li {
     margin-bottom: 10px;
 }
 
+/* Restrict the figure element's width and center it */
+.work-figure {
+    max-width: 50%; /* Limit width to 50% of the screen */
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Center align the caption */
+}
+
 .work-image img {
     max-width: 100%; /* Make the image scale with the container */
     height: auto; /* Maintain the aspect ratio */
@@ -102,6 +193,23 @@ li {
     height: auto;
     display: block; /* Prevents inline spacing issues */
     margin: 20px 0; /* Adds space around the image */
+
+/* Style the image */
+.portfolio-img {
+    width: 100%; /* Image will fill the figure's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline spacing */
+    border-radius: 8px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+/* Style the caption */
+.work-figure figcaption {
+    font-size: 0.9rem; /* Optional: adjust caption size */
+    color: #666; /* Optional: lighter text color */
+    margin-top: 0.5rem; /* Add space between image and caption */
+}
+
 }
 
 /* Focus styles for interactive elements */
@@ -154,5 +262,48 @@ footer {
     color: #f5f5f5; /* Off-white text color for contrast */
     padding: 10px;
     text-align: center;
+}
+
+/* The container holding the image and text */
+.work-section {
+    display: flex; /* Enable Flexbox */
+    justify-content: space-between; /* Spread items evenly */
+    align-items: center; /* Align items vertically in the center */
+    gap: 1rem; /* Add space between the image and text */
+    margin: 2rem auto; /* Center the section and add vertical spacing */
+    max-width: 1200px; /* Limit the container width */
+    padding: 0 1rem; /* Add horizontal padding */
+}
+
+/* Restrict the width of the image */
+.work-figure {
+    flex: 1; /* Let the image take up half the space */
+    max-width: 50%; /* Ensure it doesn't grow beyond half */
+}
+
+/* Style the image */
+.portfolio-img {
+    width: 100%; /* Image fills its parent */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+/* Style the text */
+.work-section {
+    flex: 1; /* Let the text take up the other half */
+    max-width: 50%; /* Ensure text doesn't grow beyond half */
+    font-size: 1rem; /* Adjust text size */
+    line-height: 1.5; /* Improve readability */
+    color: #333; /* Text color */
+}
+
+.work-description h3 {
+    margin-bottom: 0.5rem; /* Add spacing under the heading */
+    font-size: 1.5rem; /* Larger heading */
+}
+
+.work-description p {
+    margin: 0; /* Remove default paragraph margin */
 }
 
