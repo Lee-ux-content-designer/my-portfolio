@@ -85,7 +85,7 @@ h1, h2, h3 {
 
 /* Style the image */
 .portfolio-img {
-    max-width: 150%; /* Adjust image to take up more space */
+    max-width: 75%; /* Adjust image to take up more space */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Optional: rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
