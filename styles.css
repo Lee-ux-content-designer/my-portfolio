@@ -8,7 +8,6 @@ body {
     padding: 0;
 }
 
-
 /* Main Content Styles */
 main {
     max-width: 1200px; /* Limit the width of the main content area */
@@ -38,14 +37,6 @@ h1, h2, h3 {
     border-radius: 8px; /* Optional: rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
     margin: 20px 0; /* Adds space around the image */
-}
-
-/* Text Section */
-.work-description {
-    flex: 1;
-    font-size: 1rem; /* Adjust text size */
-    line-height: 1.5; /* Improve readability */
-    color: #333; /* Text color */
 }
 
 /* Filter Pills Styles */
