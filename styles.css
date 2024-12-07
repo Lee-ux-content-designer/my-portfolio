@@ -21,27 +21,6 @@ h1, h2, h3 {
 
 }
 
-.work-section {
-    display: flex; /* Enable flexbox layout */
-    justify-content: flex-start; /* Align elements to the left */
-    align-items: center; /* Vertically align content */
-    gap: 1rem; /* Space between the image and the text */
-    margin: 2rem auto; /* Center the section horizontally */
-    max-width: 1200px; /* Limit the width of the section */
-    padding: 0 1rem; /* Horizontal padding */
-}
-
-.work-figure {
-    flex: 0 1 35%; /* Control the width of the image (35% of the container's width) */
-}
-
-.work-description {
-    flex: 1; /* Allow the description section to take up the remaining space */
-    font-size: 1rem; /* Set the text size */
-    line-height: 1.5; /* Set the line height for readability */
-    color: #333; /* Text color */
-}
-
 .portfolio-img {
     max-width: 100%; /* Make the image responsive */
     height: auto; /* Maintain aspect ratio */
