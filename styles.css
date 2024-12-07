@@ -83,6 +83,13 @@ li {
     margin-bottom: 10px;
 }
 
+.work-image img {
+    max-width: 100%; /* Make the image scale with the container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any extra space below the image */
+    margin: 20px auto; /* Center the image with some margin */
+}
+
 .portfolio-container {
     width: 66%; /* Make the container half of the page width */
     margin: 0 auto; /* Center the container horizontally */
