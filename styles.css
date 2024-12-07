@@ -1,3 +1,14 @@
+body {
+    font-family: 'Calibri', sans-serif; /* Ensure Calibri is used */
+    font-size: 16px; /* Default font size */
+    background-color: #FEFCED; /* Change the background color to light yellow */
+    color: #333; /* Dark text for high contrast */
+    line-height: 1.6; /* Improved line height for readability */
+    margin: 0;
+    padding: 0;
+}
+
+
 /* Main Content Styles */
 main {
     max-width: 1200px; /* Limit the width of the main content area */
@@ -22,24 +33,11 @@ h1, h2, h3 {
 }
 
 .portfolio-img {
-    max-width: 100%; /* Make the image responsive */
+    max-width: 50%; /* Make the image responsive */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Optional: rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
     margin: 20px 0; /* Adds space around the image */
-}
-
-
-/* Work Section Styles */
-.work-section {
-    display: flex; /* Enable flexbox */
-    justify-content: flex-start; /* Align the content to the left */
-    align-items: flex-start; /* Align the content to the top vertically */
-    gap: 1rem; /* Space between image and text */
-    margin: 2rem auto; /* Center the section horizontally */
-    max-width: 1200px; /* Limit the width */
-    padding: 0 1rem; /* Add horizontal padding */
-    text-align: left; /* Align text to the left */
 }
 
 /* Text Section */
