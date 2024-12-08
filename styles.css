@@ -108,13 +108,13 @@ h1, h2, h3 {
     margin-bottom: 20px;
 }
 
-/* Ensure buttons have sufficient size */
+/* Ensure buttons are accessible and large enough */
 button, .filter-pill {
     font-family: 'Calibri', sans-serif; /* Ensure consistent font */
     font-size: 16px; /* Font size */
-    padding: 14px 18px; /* Adjust padding to make the button larger */
-    min-width: 44px; /* Ensure minimum width for touch targets */
-    min-height: 44px; /* Ensure minimum height for touch targets */
+    padding: 16px 20px; /* Adjust padding to make the button larger */
+    min-width: 120px; /* Increase minimum width to make the buttons larger */
+    min-height: 48px; /* Increase minimum height for larger touch targets */
     margin: 5px; /* Add spacing between buttons */
     background-color: #e0e0e0; /* Light grey background */
     color: #222222; /* Dark grey text color */
@@ -162,6 +162,16 @@ a:focus, nav ul li a:focus {
 *:focus {
     outline: revert; /* Ensure default outline behavior is respected */
 }
+
+/* Mobile-specific adjustments for buttons */
+@media (max-width: 768px) {
+    button, .filter-pill {
+        padding: 16px 20px; /* Increase padding for better mobile accessibility */
+        min-width: 120px; /* Ensure buttons are large enough on mobile */
+        min-height: 48px; /* Larger touch targets for mobile */
+    }
+
+
 /* Footer */
 footer {
     background-color: #333;
