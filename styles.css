@@ -1,171 +1,125 @@
 body {
-    font-family: 'Calibri', sans-serif; /* Ensure Calibri is used */
-    font-size: 16px; /* Default font size */
-    background-color: #FEFCED; /* Change the background color to light yellow */
-    color: #222222; /* Dark grey text for high contrast */
-    line-height: 1.6; /* Improved line height for readability */
+    font-family: 'Calibri', sans-serif;
+    font-size: 16px;
+    background-color: #FEFCED;
+    color: #222222;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
-/* For specific elements, ensure text is also dark */
+/* Global Text and Link Styles */
 p, h1, h2, h3, a {
-    color: #222222; /* Uniform dark grey text */
-
+    color: #222222;
 }
 
-/* Adjust link styles for better visibility */
-a {
-    color: #0056b3; /* Dark blue for links */
-    text-decoration: none; /* Remove underline for cleaner look */
+a, nav ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0056b3;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
 }
 
-a:hover, a:focus {
-    color: #003580; /* Slightly darker on hover for emphasis */
+a:hover, a:focus, nav ul li a:hover, nav ul li a:focus {
+    color: #222;
+    background-color: #ffff00;
+    text-decoration: underline;
+    border: 2px solid #222;
+    border-radius: 4px;
 }
 
-/* Main Content Styles */
-main {
-    max-width: 1200px; /* Limit the width of the main content area */
-    margin: 0 auto; /* Center content horizontally */
-    padding: 30px; /* Add padding for spacing */
+/* Focus Styles */
+:focus {
+    outline: 3px solid #ffcc00;
+    outline-offset: 3px;
+    border-radius: 4px;
 }
 
-/* Banner Styles */
+*:focus {
+    outline: auto; /* Fallback for browsers not supporting revert */
+}
+
+/* Banner */
 .banner {
-    background-color: #333; /* Dark background for the banner */
-    color: #fff; /* White text color for contrast */
-    padding: 20px; /* Padding around the text */
-    text-align: center; /* Center the text */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
 .banner h1 {
-    font-size: 2em; /* Make the heading larger */
-    margin: 0; /* Remove margin for the heading */
+    font-size: 2em;
+    margin: 0;
 }
 
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
 
 h2 {
     font-size: 1.5em;
 }
 
-/* Add spacing between paragraphs */
 p {
-    margin-bottom: 20px; /* Adjust the value as needed */
+    margin-bottom: 20px;
 }
 
-/* Add spacing after headings */
 h1, h2, h3 {
-    margin-top: 30px; /* Add space before the heading */
-    margin-bottom: 15px; /* Add space after the heading */
-
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
+/* Image Styles */
 .portfolio-img {
-    max-width: 50%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
-    margin: 20px 0; /* Adds space around the image */
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
-/* Filter Pills Styles */
+/* Filter Pills */
 #filter-container {
     margin-bottom: 20px;
 }
 
 button, .filter-pill {
-    font-family: 'Calibri', sans-serif; /* Ensure consistent font */
-    font-size: 16px; /* Font size */
-    padding: 12px 16px; /* Adjust padding to make the button larger */
-    min-width: 44px; /* Ensure minimum width */
-    min-height: 44px; /* Ensure minimum height */
-    margin: 5px; /* Add spacing between buttons */
-    background-color: #e0e0e0; /* Background color */
-    color: #222222; /* Text color */
-    border: 1px solid #ccc; /* Light grey border */
-    border-radius: 5px; /* Rounded corners for better usability */
-    cursor: pointer; /* Pointer cursor to indicate interactivity */
-    text-align: center; /* Center-align text */
-    display: inline-block; /* Ensure it behaves like a button */
+    font-size: 16px;
+    padding: 12px 16px;
+    min-width: 44px;
+    min-height: 44px;
+    margin: 5px;
+    background-color: #e0e0e0;
+    color: #222222;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
 }
 
 button:focus, button:hover, .filter-pill:focus, .filter-pill:hover {
-    background-color: #ffff00; /* Highlight on focus/hover */
-    color: #000000; /* Black text for better contrast */
-    border: 2px solid #222222; /* Highlight border */
-
+    background-color: #ffff00;
+    color: #000000;
+    border: 2px solid #222222;
 }
 
 .filter-pill.active {
-    background-color: #ffff00; /* Yellow background when active */
-    color: #333; /* Dark text color when active */
+    background-color: #ffff00;
+    color: #333;
 }
 
-.filter-pill:focus {
-    background-color: #ffff00; /* Yellow background when focused */
-    color: #333; /* Dark text color for better contrast */
-    border: 2px solid #333; /* Dark border to indicate focus */
-}
-
-a {
-    display: inline-block; /* Make links behave like buttons */
-    padding: 10px 12px; /* Add padding for touch target size */
-    min-width: 44px; /* Ensure minimum width */
-    min-height: 44px; /* Ensure minimum height */
-    color: #0056b3; /* Link color */
-    text-decoration: none; /* Remove underline for cleaner look */
-}
-
-a:hover, a:focus {
-    background-color: #ffff00; /* Highlight on focus/hover */
-    color: #222222; /* Text color for better visibility */
-    border-radius: 4px; /* Optional rounded corners */
-    outline: none; /* Remove default outline for a cleaner look */
-}
-
-nav ul li a {
-    display: inline-block; /* Ensure clickable area for links */
-    padding: 14px 20px; /* Add padding for larger touch targets */
-    min-width: 44px; /* Minimum touch target width */
-    min-height: 44px; /* Minimum touch target height */
-    font-size: 18px; /* Explicitly set font size for navigation */
-    color: #0056b3; /* Text color */
-    background-color: transparent; /* Transparent background */
-    text-decoration: none; /* Remove underline */
-    text-align: center; /* Center-align text */
-}
-
-nav ul li a:hover, nav ul li a:focus {
-    background-color: #ffff00; /* Highlight on focus/hover */
-    color: #222222; /* Text color for visibility */
-    border-radius: 4px; /* Optional rounded corners */
-    outline: none; /* Remove default outline for a cleaner look */
-}
-
-/* Links and navigation text styling */
-a, nav ul li a {
-    font-size: 18px; /* Increase font size for better readability */
-    font-weight: bold; /* Make text thicker for improved visibility */
-    color: #0056b3; /* Ensure sufficient contrast (dark blue) */
-    text-decoration: none; /* Remove underline for a cleaner look */
-    padding: 10px 14px; /* Add padding for larger clickable area */
-    display: inline-block; /* Ensure clickable area behaves like a block */
-}
-
-a:hover, a:focus, nav ul li a:hover, nav ul li a:focus {
-    color: #222; /* Darker color for hover and focus */
-    background-color: #ffff00; /* High-contrast yellow background */
-    text-decoration: underline; /* Add underline to signal interaction */
-    border: 2px solid #222; /* Add a border for stronger focus indication */
-    border-radius: 4px; /* Optional: rounded edges for the focus indicator */
-}
-
-
-/* Footer Styles */
+/* Footer */
 footer {
-    background-color: #333; /* Dark grey background for footer */
-    color: #f5f5f5; /* Off-white text color for contrast */
+    background-color: #333;
+    color: #f5f5f5;
     padding: 10px;
     text-align: center;
 }
