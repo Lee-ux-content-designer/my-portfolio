@@ -2,10 +2,26 @@ body {
     font-family: 'Calibri', sans-serif; /* Ensure Calibri is used */
     font-size: 16px; /* Default font size */
     background-color: #FEFCED; /* Change the background color to light yellow */
-    color: #333; /* Dark text for high contrast */
+    color: #222222; /* Dark grey text for high contrast */
     line-height: 1.6; /* Improved line height for readability */
     margin: 0;
     padding: 0;
+}
+
+/* For specific elements, ensure text is also dark */
+p, h1, h2, h3, a {
+    color: #222222; /* Uniform dark grey text */
+
+}
+
+/* Adjust link styles for better visibility */
+a {
+    color: #0056b3; /* Dark blue for links */
+    text-decoration: none; /* Remove underline for cleaner look */
+}
+
+a:hover, a:focus {
+    color: #003580; /* Slightly darker on hover for emphasis */
 }
 
 /* Main Content Styles */
@@ -44,17 +60,27 @@ h1, h2, h3 {
     margin-bottom: 20px;
 }
 
-.filter-pill {
-    font-family: 'Calibri', sans-serif; /* Ensure Calibri font */
-    font-size: 16px; /* Consistent font size */
-    padding: 10px 20px; /* Increase padding for better size */
-    margin: 10px; /* Add spacing between pills */
-    background-color: #e0e0e0; /* Light grey background for the filter pills */
-    color: #333; /* Dark text color for the filter pills */
+button, .filter-pill {
+    font-family: 'Calibri', sans-serif; /* Ensure consistent font */
+    font-size: 16px; /* Font size */
+    padding: 12px 16px; /* Adjust padding to make the button larger */
+    min-width: 44px; /* Ensure minimum width */
+    min-height: 44px; /* Ensure minimum height */
+    margin: 5px; /* Add spacing between buttons */
+    background-color: #e0e0e0; /* Background color */
+    color: #222222; /* Text color */
     border: 1px solid #ccc; /* Light grey border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor to indicate clickable */
-    outline: none; /* Remove default outline */
+    border-radius: 5px; /* Rounded corners for better usability */
+    cursor: pointer; /* Pointer cursor to indicate interactivity */
+    text-align: center; /* Center-align text */
+    display: inline-block; /* Ensure it behaves like a button */
+}
+
+button:focus, button:hover, .filter-pill:focus, .filter-pill:hover {
+    background-color: #ffff00; /* Highlight on focus/hover */
+    color: #000000; /* Black text for better contrast */
+    border: 2px solid #222222; /* Highlight border */
+
 }
 
 .filter-pill.active {
@@ -67,6 +93,40 @@ h1, h2, h3 {
     color: #333; /* Dark text color for better contrast */
     border: 2px solid #333; /* Dark border to indicate focus */
 }
+
+a {
+    display: inline-block; /* Make links behave like buttons */
+    padding: 10px 12px; /* Add padding for touch target size */
+    min-width: 44px; /* Ensure minimum width */
+    min-height: 44px; /* Ensure minimum height */
+    color: #0056b3; /* Link color */
+    text-decoration: none; /* Remove underline for cleaner look */
+}
+
+a:hover, a:focus {
+    background-color: #ffff00; /* Highlight on focus/hover */
+    color: #222222; /* Text color for better visibility */
+    border-radius: 4px; /* Optional rounded corners */
+    outline: none; /* Remove default outline for a cleaner look */
+}
+
+nav ul li a {
+    display: inline-block; /* Ensure clickable area for links */
+    padding: 12px 16px; /* Add padding for touch targets */
+    min-width: 44px; /* Minimum touch target width */
+    min-height: 44px; /* Minimum touch target height */
+    color: #0056b3; /* Text color */
+    background-color: transparent; /* Transparent background */
+    text-decoration: none; /* Remove underline */
+    text-align: center; /* Center-align text */
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #ffff00; /* Highlight on focus/hover */
+    color: #222222; /* Text color for visibility */
+    border-radius: 4px; /* Optional rounded corners */
+}
+
 
 /* Footer Styles */
 footer {
