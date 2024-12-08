@@ -31,6 +31,20 @@ main {
     padding: 30px; /* Add padding for spacing */
 }
 
+/* Banner Styles */
+.banner {
+    background-color: #333; /* Dark background for the banner */
+    color: #fff; /* White text color for contrast */
+    padding: 20px; /* Padding around the text */
+    text-align: center; /* Center the text */
+}
+
+.banner h1 {
+    font-size: 2em; /* Make the heading larger */
+    margin: 0; /* Remove margin for the heading */
+}
+
+
 h2 {
     font-size: 1.5em;
 }
@@ -112,9 +126,10 @@ a:hover, a:focus {
 
 nav ul li a {
     display: inline-block; /* Ensure clickable area for links */
-    padding: 12px 16px; /* Add padding for touch targets */
+    padding: 14px 20px; /* Add padding for larger touch targets */
     min-width: 44px; /* Minimum touch target width */
     min-height: 44px; /* Minimum touch target height */
+    font-size: 18px; /* Explicitly set font size for navigation */
     color: #0056b3; /* Text color */
     background-color: transparent; /* Transparent background */
     text-decoration: none; /* Remove underline */
@@ -125,8 +140,8 @@ nav ul li a:hover, nav ul li a:focus {
     background-color: #ffff00; /* Highlight on focus/hover */
     color: #222222; /* Text color for visibility */
     border-radius: 4px; /* Optional rounded corners */
+    outline: none; /* Remove default outline for a cleaner look */
 }
-
 
 /* Footer Styles */
 footer {
