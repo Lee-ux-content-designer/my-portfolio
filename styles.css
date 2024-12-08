@@ -143,6 +143,25 @@ nav ul li a:hover, nav ul li a:focus {
     outline: none; /* Remove default outline for a cleaner look */
 }
 
+/* Links and navigation text styling */
+a, nav ul li a {
+    font-size: 18px; /* Increase font size for better readability */
+    font-weight: bold; /* Make text thicker for improved visibility */
+    color: #0056b3; /* Ensure sufficient contrast (dark blue) */
+    text-decoration: none; /* Remove underline for a cleaner look */
+    padding: 10px 14px; /* Add padding for larger clickable area */
+    display: inline-block; /* Ensure clickable area behaves like a block */
+}
+
+a:hover, a:focus, nav ul li a:hover, nav ul li a:focus {
+    color: #222; /* Darker color for hover and focus */
+    background-color: #ffff00; /* High-contrast yellow background */
+    text-decoration: underline; /* Add underline to signal interaction */
+    border: 2px solid #222; /* Add a border for stronger focus indication */
+    border-radius: 4px; /* Optional: rounded edges for the focus indicator */
+}
+
+
 /* Footer Styles */
 footer {
     background-color: #333; /* Dark grey background for footer */
