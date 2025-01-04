@@ -98,6 +98,10 @@ a, nav ul li a {
     font-size: 1.125rem; /* Match body text size */
     padding: 14px 20px;
 }
+ul li a {
+    padding: 0; /* Remove extra padding for bulleted links */
+    display: inline; /* Ensure links are inline with text */
+}
 
 button, .filter-pill {
     font-size: 1.125rem; /* Ensure buttons remain accessible */
