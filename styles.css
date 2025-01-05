@@ -150,7 +150,6 @@ p {
     margin-bottom: 1.5rem; /* Spacing between paragraphs */
 }
 
-
 /* Images */
 .portfolio-img {
     max-width: 50%;
@@ -161,11 +160,17 @@ p {
 }
 
 @media (max-width: 768px) {
-    .portfolio-img {
-        width: 100%;
+    .portfolio-img, .project-img {
+        max-width: 100%; /* Full width on smaller screens */
         height: auto;
-        margin: 10px 0;
     }
+
+.project-img {
+    max-width: 75%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
 /* Filter Pills */
