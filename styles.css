@@ -51,12 +51,12 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
-/* Focus */
 :focus {
-    outline: 3px solid #ffcc00;
+    outline: 3px solid #ffcc00; /* Ensure focus styles are visible */
     outline-offset: 3px;
     border-radius: 4px;
 }
+
 
 body {
     font-family: 'Calibri', sans-serif;
@@ -89,6 +89,7 @@ a, nav ul li a {
     font-size: 1.125rem; /* Match body text size */
     padding: 14px 20px;
 }
+
 ul li a {
     padding: 0; /* Remove extra padding for bulleted links */
     display: inline; /* Ensure links are inline with text */
