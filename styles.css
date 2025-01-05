@@ -129,6 +129,45 @@ h1, h2, h3 {
     margin-bottom: 15px;
 }
 
+/* General CTA Styles */
+.cta {
+    font-size: 1.125rem; /* Match the body text size */
+    padding: 8px 12px; /* Adjust padding for better alignment */
+    margin: 0; /* Remove unnecessary margins */
+    display: inline-block; /* Ensure it behaves like a button */
+    text-align: left; /* Align text to the left inside the CTA */
+    color: #0056b3; /* Default link color */
+    background-color: transparent; /* No background by default */
+    border: none; /* Remove borders unless focused/hovered */
+    text-decoration: none; /* No underline */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* CTA Focus and Hover States */
+.cta:focus, .cta:hover {
+    background-color: #ffff00; /* Yellow highlight on focus/hover */
+    color: #000; /* High contrast text */
+    outline: none; /* Remove default outline */
+    border: 2px solid #222; /* Optional border for emphasis */
+    text-decoration: underline; /* Add underline for clarity */
+}
+
+/* Alignment with Text */
+p .cta {
+    vertical-align: baseline; /* Align with surrounding text */
+}
+
+/* Optional: Adjusting Space Around CTAs */
+p {
+    margin-bottom: 1.5rem; /* Consistent spacing between paragraphs */
+}
+
+p .cta {
+    margin-right: 0.5rem; /* Add a little space after the CTA, if needed */
+}
+
+
 /* Images */
 .portfolio-img {
     max-width: 50%;
