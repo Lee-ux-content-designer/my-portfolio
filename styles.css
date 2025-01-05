@@ -124,7 +124,7 @@ h1, h2, h3 {
     font-size: 1.125rem; /* Match the body text size */
     padding: 0; /* Remove padding to avoid extra space */
     margin: 0; /* No extra margins */
-    display: inline; /* Keep the CTA inline with text */
+    display: inline-block; /* Ensure proper focusability */
     color: #0056b3; /* Link color */
     background-color: transparent; /* Transparent background */
     border: none; /* No borders */
@@ -132,10 +132,11 @@ h1, h2, h3 {
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
 }
 
-.cta:hover, .cta:focus {
+.cta:focus, .cta:hover {
     background-color: #ffff00; /* Yellow background for hover and focus */
     color: #000; /* Black text for contrast */
-    outline: none; /* Remove default focus outline */
+    outline: 2px solid #222; /* Ensure visible focus outline */
+    border-radius: 4px; /* Optional: rounded corners */
     text-decoration: underline; /* Add underline for emphasis */
 }
 
