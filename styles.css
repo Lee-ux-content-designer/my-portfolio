@@ -131,10 +131,6 @@ main {
     padding: 30px;
 }
 
-h2 {
-    font-size: 1.5em;
-}
-
 p {
     margin-bottom: 20px;
 }
@@ -142,6 +138,35 @@ p {
 h1, h2, h3 {
     margin-top: 30px;
     margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5rem; /* Default for desktops */
+    letter-spacing: 0.01em; /* Subtle spacing for H1 */
+}
+
+h2 {
+    font-size: 2rem;
+    letter-spacing: 0.02em; /* Slightly reduced tracking */
+}
+
+h3 {
+    font-size: 1.75rem;
+    letter-spacing: 0.015em; /* Consistent tracking */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem; /* Resize for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.25rem; /* Resize for smaller screens */
+    }
+
+    h3 {
+        font-size: 1.125rem; /* Resize for smaller screens */
+    }
 }
 
 .cta {
@@ -252,17 +277,6 @@ button:focus, button:hover, .filter-pill:focus, .filter-pill:hover {
 .filter-pill {
     color: #000; /* Black text */
 }
-
-h2 {
-    letter-spacing: 0.02em; /* Slightly reduced tracking */
-}
-
-@media (max-width: 768px) {
-    h2 {
-        font-size: 1.25rem; /* Adjust size for mobile */
-    }
-}
-
 
 /* Footer */
 footer {
