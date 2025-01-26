@@ -200,23 +200,11 @@ p {
 
 /* Images */
 .portfolio-img {
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
-}
-
-@media (max-width: 100%) {
-    .portfolio-img {
-  /* Full width on smaller screens */
-        height: auto;
-    }
-
-@media (max-width: 768px) {
-    .portfolio-img:not(.Lee_Baker_at_work.JPEG) {
-        display: none; /* Hide all images except index.html */
-    }
 }
 
 /* For index.html image */
