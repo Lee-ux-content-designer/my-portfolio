@@ -219,7 +219,7 @@ p {
     }
 
 @media (max-width: 768px) {
-    .index-image {
+    .portfolio-img-mobile {
         width: 100%; /* Adjust width to fit container */
         height: auto; /* Maintain aspect ratio */
         aspect-ratio: 1 / 1; /* Make the image square */
