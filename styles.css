@@ -199,7 +199,7 @@ p {
 }
 
 /* Images */
-.portfolio-img {
+.portfolio-img-desktop {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
@@ -220,7 +220,7 @@ p {
 
 @media (max-width: 768px) {
     .portfolio-img-mobile {
-        width: 100%; /* Adjust width to fit container */
+        width: 50%; /* Adjust width to fit container */
         height: auto; /* Maintain aspect ratio */
         aspect-ratio: 1 / 1; /* Make the image square */
         object-fit: cover; /* Ensure the image fills the square neatly */
