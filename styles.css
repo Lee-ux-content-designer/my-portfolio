@@ -208,48 +208,26 @@ p {
 }
 
 @media (max-width: 100%) {
-    .portfolio-img {
+    .landing-image-img {
   /* Full width on smaller screens */
         height: auto;
+    }
+
+@media (max-width: 768px) {
+    .portfolio-img) {
+        display: none; /* Hide all images except landing page image*/
     }
 }
 
 @media (max-width: 768px) {
-    .portfolio-img:not(.Lee_Baker_at_work.JPEG) {
-        display: none; /* Hide all images except index.html */
-    }
-}
-
-/* For index.html image */
-.Lee_Baker_at_work.JPEG {
-    width: auto;
-    height: auto; /* Default dimensions for desktops */
-}
-
-
-@media (max-width: 400px) {
-    .portfolio-img-mobile {
+    .index-image {
         width: 100%; /* Adjust width to fit container */
         height: auto; /* Maintain aspect ratio */
+        aspect-ratio: 1 / 1; /* Make the image square */
         object-fit: cover; /* Ensure the image fills the square neatly */
-        display: block !important;
-    }
-    .portfolio-img-desktop {
-        display: none;
     }
 }
 
-.portfolio-img-mobile {
-    display: none;
-}
-.portfolio-img-desktop {
-    width: 100%; /* Adjust width to fit container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover;  
-}
-.img-caption{
-    font-size: 15px;
-}
 
 /* Filter Pills */
 #filter-container {
