@@ -199,13 +199,6 @@ p {
 }
 
 /* Images */
-.portfolio-img-desktop {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-}
 
 @media (max-width: 768px) {
     .project-img {
@@ -220,11 +213,18 @@ p {
 
 @media (max-width: 768px) {
     .portfolio-img-mobile {
-        width: 50%; /* Adjust width to fit container */
+        width: 100%; /* Adjust width to fit container */
         height: auto; /* Maintain aspect ratio */
         aspect-ratio: 1 / 1; /* Make the image square */
         object-fit: cover; /* Ensure the image fills the square neatly */
     }
+}
+.portfolio-img-desktop {
+    max-width: 75%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
 /* Filter Pills */
