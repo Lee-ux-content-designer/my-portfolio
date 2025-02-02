@@ -208,10 +208,15 @@ p {
 }
 
 @media (max-width: 768px) {
-    .portfolio-img {
-        display: none; /* Hide all images except landing page image*/
+    .project-img {
+        display: none; /* Hide images*/
     }
 }
+
+@media (max-width: 768px) {
+    .portfolio-img-desktop {
+        display: none; /* Hide images*/
+    }
 
 @media (max-width: 768px) {
     .index-image {
