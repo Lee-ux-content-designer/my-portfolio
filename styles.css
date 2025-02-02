@@ -207,14 +207,8 @@ p {
     margin: 20px 0;
 }
 
-@media (max-width: 100%) {
-    .landing-image-img {
-  /* Full width on smaller screens */
-        height: auto;
-    }
-
 @media (max-width: 768px) {
-    .portfolio-img) {
+    .portfolio-img {
         display: none; /* Hide all images except landing page image*/
     }
 }
@@ -227,7 +221,6 @@ p {
         object-fit: cover; /* Ensure the image fills the square neatly */
     }
 }
-
 
 /* Filter Pills */
 #filter-container {
